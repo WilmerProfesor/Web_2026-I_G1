@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#uno{    
+    display: flex;   
+    justify-content: space-evenly; /* organiza con respecto a X por defecto o a Y si direccion es column  */
+    /* flex-direction: column; // cambia de fila a columna la dirección de los elememntos */ 
+    /* align-items: end; // organiza con respecto a Y por defecto o a X si direccion es column */
+    /* flex-wrap: wrap;  // si el contenedor disminuye de tamaño, los elelentos tambien, pero si es nowrap los elementos bajan de fila para reordenarse
+    /* gap: 200px; // modifica el espacio  interno entre elementos */ 
+    width: 80%;
+    height: 500px;
+    background-color: red;
+}
+
+#uno-uno{
+    background-color: blue;
+}
+
+#uno-dos{
+    background-color: green;
+}
+#uno-tres{
+    background-color: rgb(209, 53, 181);
+}
+#uno-cuatro{
+    background-color: rgb(211, 242, 38);
+}
+
+.hijo{
+    width: 150px;
+    height: 100px;    
+}
