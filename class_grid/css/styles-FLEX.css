@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;    
+    header{
+        height: 30%;
+        width: 100%;
+        background-color: aquamarine;
+    }
+    #container{
+        height: 70%;
+        width: 100%;
+        background-color: rgb(138, 145, 143);
+        display: flex;
+        aside{
+            height: 100%;
+            width: 30%;
+            background-color: rgb(255, 133, 127);
+        }
+        main{
+            height: 100%;
+            width: 70%;
+            background-color: rgb(185, 163, 162);
+            section{
+                height: 65%;
+                width: 100%;
+                background-color: rgb(248, 45, 34);
+                display: flex;
+                #news1{
+                    height: 100%;
+                    width: 50%;
+                    background-color: rgb(74, 170, 191);                    
+                }
+                #news2{
+                    height: 100%;
+                    width: 50%;
+                    background-color: rgb(220, 34, 248);
+                }
+            }
+            footer{
+                height: 35%;
+                width: 100%;
+                background-color: rgb(223, 164, 70);
+            }
+        }
+    }
+}
+
