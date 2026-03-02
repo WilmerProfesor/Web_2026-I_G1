@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */    
+    grid-template-areas:
+    "header"
+    "nav"
+    "products"
+    "services"
+    "aside"
+    "footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    background-color: red;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blue;
+}
+
+#section-products{
+    grid-area: products;
+    background-color: rgb(78, 78, 119);
+}
+#section-services{
+    grid-area: services;
+    background-color: rgb(78, 119, 87);
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(168, 115, 82);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(168, 82, 167);
+}
+
+@media (min-width: 481px ) and (max-width: 680px){
+    #container{
+    grid-template-columns: 40% auto 20%;
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */    
+    grid-template-areas:
+    "header header nav"    
+    "products products products"
+    "services services services"
+    "footer aside aside"
+    ;
+}
+}
+
+@media (min-width: 681px ){
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: #afa2a2;
+    }
+
+    #container{
+        max-width: 1000px;
+        grid-template-columns: 25% auto 25%;
+        grid-template-rows: repeat(4, 1fr);
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */    
+        grid-template-areas:
+        "nav header header"    
+        "nav products aside"
+        "nav services aside"
+        "nav footer footer"
+        ;
+    }
+}
