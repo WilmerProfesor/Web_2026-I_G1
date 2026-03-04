@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#uno{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+#dos{
+    background-color: rgb(94, 255, 0);
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top:50px;
+}
+#tres{
+    background-color: rgb(85, 0, 255);
+    width: 100px;
+    height: 100px;
+}
+#contenedor{    
+    display: flex;
+    justify-content: center;
+    border: solid red;
+    width: 500px;
+    height: 500px;
+    /* margin-top: 50px; */
+}
+#superior{        
+    border: solid red;
+    width: 500px;
+    height: 100px;
+}
+#inferior{        
+    border: solid red;
+    width: 500px;
+    height: 700px;
+}
