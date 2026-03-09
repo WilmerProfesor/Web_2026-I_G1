@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#options{
+    display: none;
+    justify-content: end;
+    align-items: center;
+    color: yellow;
+    padding-right: 20%;
+    gap: 50px;
+    height: 30px;
+    background-color: rgb(75, 161, 200);
+    width: 100vw;
+}
+
+.articulos{
+    height: 50vh;
+    width: 100vw;
+}
+
+#uno{
+    background-color: aquamarine;
+}
+#dos{
+    background-color: rgb(246, 255, 127);
+}
+#tres{
+    background-color: rgb(138, 127, 255);
+}
+#cuatro{
+    background-color: rgb(255, 127, 172);
+}
+
+@media (min-width: 900px ){ 
+    #options{
+        display: flex;
+    }
+    .articulos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+    }
+    #news{
+        display: flex;
+    }
+} 
