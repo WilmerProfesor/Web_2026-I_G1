@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;    
+}
+
+#test{
+    /* font-size: 3rem; */
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    /* background-image:radial-gradient( circle, yellow,yellow, blue, red); */
+    /* background-image:radial-gradient( circle, yellow,yellow, blue, red); */
+    /* transform: translate(200px, 300px); */
+    /* transform: rotateX(50deg); */
+    /* background-image:radial-gradient( circle, yellow,yellow, blue, red);
+    transition: 3s; */
+    /* &:hover{
+        background-color: yellow;
+        
+    } */
+}
+
+.letra-verde{
+    color:green;
+}
+
+.letra-grande{
+    font-size: 3rem;
+}
+
