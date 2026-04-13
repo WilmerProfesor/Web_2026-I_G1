@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+import Footer from './Components/Footer/Footer'
+
 function App() {
   const [count, setCount] = useState(0)
   const [count2, setCount2] = useState(0)
@@ -23,6 +25,17 @@ function App() {
 
   useEffect(  ()=>{
       console.log("Se cargó el componente");      
+  },[]);
+
+
+  // cargar data de una API, cada vez que se monte el componente, es decir, solo una vez.
+  useEffect(  ()=>{
+    const dataFetch=() => {  
+    fetch('https://dragonball-api.com/api/characters')
+      .then(response => response.json())
+      .then(data => console.log(data));
+    }
+    dataFetch();
   },[]);
 
   useEffect(  ()=>{
@@ -140,6 +153,7 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+      <Footer contador={count} />
     </>
   )
 }
