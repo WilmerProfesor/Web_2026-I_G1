@@ -25,9 +25,11 @@ function App() {
   return (
     <>
       <p>{data ? data.length : 0} characters</p>
-      {data && data.map((character) => (
-        <CardCharacter key={character.id} image={character.image} name={character.name} description={character.description}  />
-      ))}
+      <div id='container-cards'>
+        {data && data.map((character) => (
+          <CardCharacter key={character.id} image={character.image} name={character.name} description={character.description}  />
+        ))}
+      </div>
     </>
   )
 }

@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#container-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
