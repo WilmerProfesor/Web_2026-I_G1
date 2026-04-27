@@ -6,4 +6,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #b8b0b0;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }

@@ -8,6 +8,7 @@ const StudentCard = (props) => {
         <p>Edad: {props.item.Edad}</p>
         <p>Promedio: {props.item.Promedio}</p>
         <p>Sexo: {props.item.Sexo ? "Masculino" : "Femenino"}</p>
+        <img src={props.item.img} alt="" />       
       </div>
   )
 }
