@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Age from './Components/Age/Age'
 import Calculator from './Components/Calculator/Calculator'
 import ApiSimpsons from './Components/ApiSimpsons/ApiSimpsons'
+import ApiFireStore from './Components/ApiFireStore/ApiFireStore'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Age />
       <Calculator />
       <ApiSimpsons />
+      <ApiFireStore />
       <Footer />
     </div>
   )
