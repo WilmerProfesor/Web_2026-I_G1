@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;    
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     .ContainerAge{
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
