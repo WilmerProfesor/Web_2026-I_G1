@@ -29,7 +29,7 @@ function App() {
     //-------- SI DESEAMOS CARGAR VARIOS DOCUMENTOS --------
     const fetchData = async() => {      
       // const q = query(collection(db, "Estudiantes")); //toda la data
-      const q = query(collection(db, "Estudiantes"), where("Sexo", "==", true));  // data filtrada
+      const q = query(collection(db, "estudiante"), where("estado", "==", true));  // data filtrada
 
       const querySnapshot = await getDocs(q);
       const arrayTmp = [];
@@ -37,6 +37,7 @@ function App() {
         const newDoc = {id: doc.id, ...doc.data()};        
         arrayTmp.push(newDoc);        
       });
+      console.log(arrayTmp);      
       setArrayData(arrayTmp);                  
     }  
     fetchData();    

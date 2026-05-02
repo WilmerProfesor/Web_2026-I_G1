@@ -1,0 +1,24 @@
+.Age{
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    .ContainerAge{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;        
+        .ButtonAge{
+            padding: 10px 20px;
+            background-color: #0f84f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
